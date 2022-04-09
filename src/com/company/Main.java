@@ -9,6 +9,9 @@ public class Main {
 
         clipBoard1.copy("abc");
         clipBoard1.paste();
+        clipBoard1.paste();
+        clipBoard1.paste();
+        
 
 
 
