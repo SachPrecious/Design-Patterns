@@ -9,5 +9,6 @@ public class ClipBoardMain {
         ClipBoard clipBoard =ClipBoard.getInstance();
         clipBoard.copy("Amo Amo");
         clipBoard.paste();
+
     }
 }
