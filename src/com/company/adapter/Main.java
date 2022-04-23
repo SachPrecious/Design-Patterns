@@ -9,7 +9,7 @@ public class Main {
 
         String fileName="path";
         Player player=null;
-
+/*
         if (fileName.endsWith("mp3")){
             player=new Mp3Player();
         }else if(fileName.endsWith("mp4")) {
@@ -18,7 +18,7 @@ public class Main {
             ImageDisplay imageDisplay = new JPGImageDisplay();
             player=imageDisplay;
         }
-        player.play(fileName);
+        player.play(fileName);*/
 
     }
 }
