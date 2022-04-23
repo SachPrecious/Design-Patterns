@@ -23,25 +23,39 @@ public class Main {
         status.bat2Name="Kaluwithrana";
         status.bat1Score=30;
         status.bat2Score=12;
-        status.team1Score=45;
-        status.team2Score=0;
+
         status.currentBowlerName="Warne";
 
+        status.team1Score=45;
+        status.team2Score=0;
+
         subject.notifyAllObservers(status);
 
         System.out.println("=====================================>");
 
-        Thread.sleep(1000);
+        Thread.sleep(10000);
+
         status.bat1Score=32;
         status.team1Score=47;
+
         subject.notifyAllObservers(status);
         System.out.println("=====================================>");
 
-        Thread.sleep(1000);
+        Thread.sleep(20000);
         status.bat1Score=36;
         status.team1Score=51;
         subject.notifyAllObservers(status);
         System.out.println("=====================================>");
+
+        Thread.sleep(30000);
+        status.bat1Name="Marvan Attapattu";
+        status.bat1Score=0;
+        status.team1Score=51;
+        subject.notifyAllObservers(status);
+
+
+
+
 
 
 
