@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Singleton;
 
 public class ClipBoard {
     private String content;
@@ -7,6 +7,8 @@ public class ClipBoard {
 
    /*
     private ClipBoard{
+
+
 
 
     }

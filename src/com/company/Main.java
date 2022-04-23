@@ -1,17 +1,48 @@
 package com.company;
 
+import com.company.observer.*;
+
 public class Main {
 
 
-    public static void main(String[] args) {
-        ClipBoard clipBoard1=new ClipBoard();
-        ClipBoard clipBoard2=new ClipBoard();
+    public static void main(String[] args) throws InterruptedException {
 
-        clipBoard1.copy("abc");
-        clipBoard1.paste();
-        clipBoard1.paste();
-        clipBoard1.paste();
-        
+
+        Observer battingSummary= new BattingSummaryObserver();
+        Observer bowlingSummary=new BowlingSummaryObserver();
+        Observer matchSummary=new MatchSummaryObserver();
+
+        Subject subject = new Subject();
+        subject.subscribe(battingSummary);
+        subject.subscribe(matchSummary);
+        subject.subscribe(bowlingSummary);
+
+        MatchStatus status =new MatchStatus();
+
+        status.bat1Name="Sanath Jayasooriya";
+        status.bat2Name="Kaluwithrana";
+        status.bat1Score=30;
+        status.bat2Score=12;
+        status.team1Score=45;
+        status.team2Score=0;
+        status.currentBowlerName="Warne";
+
+        subject.notifyAllObservers(status);
+
+        System.out.println("=====================================>");
+
+        Thread.sleep(1000);
+        status.bat1Score=32;
+        status.team1Score=47;
+        subject.notifyAllObservers(status);
+        System.out.println("=====================================>");
+
+        Thread.sleep(1000);
+        status.bat1Score=36;
+        status.team1Score=51;
+        subject.notifyAllObservers(status);
+        System.out.println("=====================================>");
+
 
 
 
