@@ -8,4 +8,33 @@ import java.util.List;
 public class Salary {
     List<Observer> observers=new ArrayList<>();
 
+    public int getVal() {
+        return val;
+    }
+
+    public void setVal(int val) {
+        this.val = val;
+        notifyAllObservers();
+    }
+
+    private void notifyAllObservers() {
+        for (Observer ob:observers ) {
+                ob.update();
+        }
+    }
+
+    private int val;
+    public Salary(int val) {
+        this.val = val;
+    }
+
+    public void subscribe(Observer ob){
+        observers.add(ob);
+    }
+
+
+
+
+
+
 }
