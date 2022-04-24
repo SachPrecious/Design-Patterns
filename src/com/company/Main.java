@@ -1,6 +1,6 @@
 package com.company;
 
-import com.company.observer.*;
+import com.company.observer.example1.*;
 
 public class Main {
 

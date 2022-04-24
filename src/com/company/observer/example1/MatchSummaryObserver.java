@@ -1,4 +1,4 @@
-package com.company.observer;
+package com.company.observer.example1;
 
 public class MatchSummaryObserver implements Observer {
     @Override
