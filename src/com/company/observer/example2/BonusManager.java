@@ -1,5 +1,5 @@
 package com.company.observer.example2;
 
-public class Main {
+public class BonusManager {
 
 }
