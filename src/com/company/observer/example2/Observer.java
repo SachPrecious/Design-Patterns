@@ -1,5 +1,6 @@
 package com.company.observer.example2;
 
-public interface Observer {
-    public void notifyALlObservers();
+public abstract class Observer {
+    Salary salary = null;
+    public abstract void update();
 }
