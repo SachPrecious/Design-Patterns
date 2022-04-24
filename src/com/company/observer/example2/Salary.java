@@ -1,7 +1,5 @@
 package com.company.observer.example2;
 
-
-
 import java.util.ArrayList;
 import java.util.List;
 //this is our subject class
@@ -27,15 +25,9 @@ public class Salary {
         }
     }
 
-
     public void subscribe(Observer ob){
         observers.add(ob);
     }
-
-
-
-
-
 
 
 }
