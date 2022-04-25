@@ -1,9 +1,6 @@
 package com.company.adapter.image;
 
-public class ImageDisplay {
+public interface ImageDisplay {
 
-
-    public void show(String fileName){
-
-    }
+    void show(String fileName);
 }
