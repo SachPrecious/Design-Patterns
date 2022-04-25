@@ -1,4 +1,4 @@
-package com.company.observer.example2;
+package com.company.observerpattern.example2;
 
 public class EmployeeBonus extends Observer{
 

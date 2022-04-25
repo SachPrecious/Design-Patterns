@@ -1,4 +1,4 @@
-package com.company.adapter;
+package com.company.adapterpattern;
 
 public interface Player {
 

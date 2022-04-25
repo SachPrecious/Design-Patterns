@@ -1,7 +1,4 @@
-package com.company.adapter;
-
-import com.company.adapter.image.ImageDisplay;
-import com.company.adapter.image.JPGImageDisplay;
+package com.company.adapterpattern;
 
 public class Main {
     public static void main(String[] args) {

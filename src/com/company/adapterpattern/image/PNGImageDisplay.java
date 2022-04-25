@@ -1,4 +1,4 @@
-package com.company.adapter.image;
+package com.company.adapterpattern.image;
 
 public class PNGImageDisplay implements ImageDisplay {
     @Override

@@ -1,6 +1,6 @@
-package com.company.adapter;
+package com.company.adapterpattern;
 
-import com.company.adapter.image.ImageDisplay;
+import com.company.adapterpattern.image.ImageDisplay;
 
 public class ImageAdaptor implements Player {
 

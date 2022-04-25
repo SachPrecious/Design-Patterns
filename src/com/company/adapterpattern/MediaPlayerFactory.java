@@ -1,8 +1,8 @@
-package com.company.adapter;
+package com.company.adapterpattern;
 
-import com.company.adapter.image.ImageDisplay;
-import com.company.adapter.image.JPGImageDisplay;
-import com.company.adapter.image.PNGImageDisplay;
+import com.company.adapterpattern.image.ImageDisplay;
+import com.company.adapterpattern.image.JPGImageDisplay;
+import com.company.adapterpattern.image.PNGImageDisplay;
 
 public class MediaPlayerFactory {
 

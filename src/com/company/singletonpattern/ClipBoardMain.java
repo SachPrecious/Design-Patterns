@@ -1,4 +1,4 @@
-package com.company.Singleton;
+package com.company.singletonpattern;
 
 public class ClipBoardMain {
 

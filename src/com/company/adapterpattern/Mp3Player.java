@@ -1,4 +1,4 @@
-package com.company.adapter;
+package com.company.adapterpattern;
 
 public class Mp3Player implements  Player{
 

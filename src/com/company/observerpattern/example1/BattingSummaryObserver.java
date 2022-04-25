@@ -1,4 +1,4 @@
-package com.company.observer.example1;
+package com.company.observerpattern.example1;
 
 public class BattingSummaryObserver implements Observer {
     @Override
