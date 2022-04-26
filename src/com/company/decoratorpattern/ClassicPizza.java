@@ -12,6 +12,6 @@ public class ClassicPizza extends Pizza{
 
     @Override
     public double getCost() {
-        return super.getCost();
+        return 1000.0;
     }
 }
