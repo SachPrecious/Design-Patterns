@@ -1,28 +1,14 @@
 package com.company.decoratorpattern;
 
-public class Pizza {
-    private String description;
-    private double cost;
+public abstract class Pizza {
 
-    public Pizza(String description, float cost) {
-        this.description = description;
-        this.cost = cost;
-    }
 
 
     public String getDescription() {
-        return description;
+        return "A Pizza";
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+    public abstract double getCost();
 
-    public double getCost() {
-        return cost;
-    }
 
-    public void setCost(double cost) {
-        this.cost = cost;
-    }
 }
