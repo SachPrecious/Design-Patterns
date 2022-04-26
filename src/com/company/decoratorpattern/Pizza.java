@@ -8,7 +8,9 @@ public abstract class Pizza {
         return "A Pizza";
     }
 
-    public abstract double getCost();
+    public double getCost() {
+        return 1000;
+    }
 
 
 }

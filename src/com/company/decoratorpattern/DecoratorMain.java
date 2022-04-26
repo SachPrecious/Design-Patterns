@@ -2,12 +2,20 @@ package com.company.decoratorpattern;
 
 public class DecoratorMain {
     public static void main(String[] args) {
-        Pizza pizza1=new ClassicPizza();
-        Pizza pizza2=new ThinCrustPizza();
+
+        //Create a classic Pizza
+        Pizza classicPizza=new ThinCrustPizza();
+
+        //add BBQ Toppings
+        Pizza classicPizzaWithBBQ=new BBQPizzaDecorator(classicPizza);
+
+       // Pizza classicPizzaWithBBQExtraCheese=new BBQPizzaDecorator();
 
 
-        System.out.println(pizza1.getCost());
-        System.out.println(pizza1.getDescription());
+        System.out.println(classicPizzaWithBBQ.getCost());
+        //System.out.println(classicPizzaWithBBQ.getDescription());
+        System.out.println("==========================================================================>");
+        //System.out.println(classicPizzaWithBBQExtraCheese.getDescription());
 
 
     }
