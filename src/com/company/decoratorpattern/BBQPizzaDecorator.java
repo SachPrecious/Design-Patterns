@@ -11,6 +11,7 @@ public class BBQPizzaDecorator extends PizzaDecorator{
     public double getCost() {
         double previousCost=super.getCost();
         return previousCost+300;
+
     }
 
 
